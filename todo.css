@@ -1,0 +1,138 @@
+body {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+}
+
+.todo-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  width: 380px;
+}
+
+h1 {
+  text-align: center;
+  color: #2980b9;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #2980b9;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52,152,219,0.3);
+}
+
+button {
+  background: #2980b9;
+  border: none;
+  color: white;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #3498db;
+  transform: scale(1.1);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.5rem;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+li:hover {
+  background-color: #f0f4f8;
+}
+
+li.completed span.task-text {
+  text-decoration: line-through;
+  color: #999;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.task-text {
+  flex-grow: 1;
+  margin-left: 0.5rem;
+}
+
+.checkbox {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.actions button {
+  background: transparent;
+  border: none;
+  color: #e74c3c;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0 0.3rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.actions button:hover {
+  color: #c0392b;
+  transform: scale(1.2);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#clear-completed {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#clear-completed:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
